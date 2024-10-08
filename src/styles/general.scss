@@ -1,0 +1,18 @@
+// ШРИФТЫ
+@font-face {
+  font-family: "ps2";
+  src: url("/assets/fonts/PressStart2P-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Skillscreen-Regular";
+  src: url("/assets/fonts/Silkscreen-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Skillscreen-Bold";
+  src: url("/assets/fonts/Silkscreen-Bold.ttf");
+}
+
+// ЦВЕТА
+$mainColor: #04d404;
