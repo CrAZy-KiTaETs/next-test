@@ -1,17 +1,24 @@
 // import logo from '/assets/icons/logo.png';
-import SubmitBtn from '@/components/UI/submitBtn/SubmitBtn';
+// import SubmitBtn from '@/components/UI/submitBtn/SubmitBtn';
 import styles from './App.module.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { increment } from './store/mySlicer';
+import { useEffect } from 'react';
 
 function ReactPage() {
+const value = useSelector(state => state.lox.count)
+const dispatch = useDispatch()
 
-  const value2 = useSelector(state => state.value)
+useEffect(() => {
+  console.log(value);
+}, [])
+
   return (
     <div className={styles.App}>
 
-      <p>new Value: {value2}</p>
+      <p>new Value: {value}</p>
+      {/* <button onClick={() => dispatch(increment())}>add</button> */}
       <header className="App-header">
-        <img src="/assets/icons/logo.png" className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.sadasdsadad
         </p>
@@ -25,7 +32,7 @@ function ReactPage() {
         </a>
 
 
-        <SubmitBtn text={"asdsad"} className={styles.redBtn} id={"dsa"}/>
+        {/* <SubmitBtn text={"asdsad"} className={styles.redBtn} id={"dsa"}/> */}
       </header>
     </div>
   );

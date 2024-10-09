@@ -4,9 +4,8 @@ import HomeHeader from "./components/homeHeader/HomeHeader";
 export default function Home() {
   return (
     <>
-    <HomeHeader/>
-    <div>asdsaddas</div>
-    
+      <HomeHeader />
+      <div>asdsaddas</div>
     </>
   );
 }
