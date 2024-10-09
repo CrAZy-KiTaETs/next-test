@@ -1,9 +1,15 @@
 // import logo from '/assets/icons/logo.png';
-import cn from './App.module.css';
+import SubmitBtn from '@/components/UI/submitBtn/SubmitBtn';
+import styles from './App.module.css';
+import { useSelector } from 'react-redux';
 
-function App() {
+function ReactPage() {
+
+  const value2 = useSelector(state => state.value)
   return (
-    <div className={cn.App}>
+    <div className={styles.App}>
+
+      <p>new Value: {value2}</p>
       <header className="App-header">
         <img src="/assets/icons/logo.png" className="App-logo" alt="logo" />
         <p>
@@ -17,9 +23,12 @@ function App() {
         >
           Learn React
         </a>
+
+
+        <SubmitBtn text={"asdsad"} className={styles.redBtn} id={"dsa"}/>
       </header>
     </div>
   );
 }
 
-export default App;
+export default ReactPage;
