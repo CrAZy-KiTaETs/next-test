@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { homeIncrement } from "../store/homeSlicer";
+import { homeIncrement } from "@/components/store/homeSlicer";
 import { mainIncrement } from "@/components/store/mainSlicer";
 
 export default function HomeHeader() {

@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import mainSlicer from "./mainSlicer";
-import homeSlicer from "@/pages/home/components/store/homeSlicer";
+import homeSlicer from "./homeSlicer";
 
 const rootReducer = combineReducers({
     mainData: mainSlicer,
